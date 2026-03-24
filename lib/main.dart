@@ -11,93 +11,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext ontext) {
     return MaterialApp(
       home: Scaffold(
-        body: GridView.count(
-          crossAxisCount: 2,
-          children: [
-            Padding(
+        body: GridView.builder(
+          itemCount: 20,
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 3,
+          ),
+          itemBuilder: (context, index) {
+            return Padding(
               padding: const EdgeInsets.all(8.0),
               child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ), Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-             Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(height: 200, width: 200, color: Colors.red),
-            ),
-          ],
+            );
+          },
         ),
       ),
     );
