@@ -1,28 +1,28 @@
-import 'package:flutter/material.dart';
-void main(){
-  runApp(MyApp());
-}
+// import 'package:flutter/material.dart';
+// void main(){
+//   runApp(MyApp());
+// }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+// class MyApp extends StatelessWidget {
+//   const MyApp({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return  MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(12),
-            child: Container(
-              height: 200,
-              width: 200,
-              decoration: BoxDecoration(
-                color: Colors.red,
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return  MaterialApp(
+//       home: Scaffold(
+//         body: Center(
+//           child: ClipRRect(
+//             borderRadius: BorderRadius.circular(12),
+//             child: Container(
+//               height: 200,
+//               width: 200,
+//               decoration: BoxDecoration(
+//                 color: Colors.red,
+//               ),
+//             ),
+//           ),
+//         ),
+//       ),
+//     );
+//   }
+// }
