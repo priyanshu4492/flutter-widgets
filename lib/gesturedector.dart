@@ -74,7 +74,7 @@ class _MyAppState extends State<MyApp> {
                       ),
                     ],
                   ),
-                  child: Text("click to minus", style: TextStyle(fontSize: 40)),
+                  child: Text("click to ", style: TextStyle(fontSize: 40)),
                 ),
               ),
             ],
