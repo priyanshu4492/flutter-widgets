@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:widgets/gradient.dart';
 import 'package:widgets/modern_container.dart';
 import 'package:widgets/neomorphism.dart';
 
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:ModerContainer()
+      debugShowCheckedModeBanner: false,
+      home:Neomorphism()
     );
   }
 }

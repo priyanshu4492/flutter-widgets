@@ -1,59 +1,44 @@
-// import 'package:flutter/material.dart';
-// class neoMorphism extends StatelessWidget {
-//   const neoMorphism({super.key});
+import 'package:flutter/material.dart';
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//         backgroundColor: Colors.deepPurple[300],
-//         body: Center(
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.center,
-//             children: [
-//               Container(
-//                 height: 100,
-//                 width: 100,
+class Neomorphism extends StatelessWidget {
+  const Neomorphism({super.key});
 
-//                 decoration: BoxDecoration(
-//                   shape: BoxShape.circle,
-//                   gradient: LinearGradient(
-//                     end: Alignment.topLeft,
-//                     begin: Alignment.bottomRight,
-//                     colors: [
-//                       Colors.deepPurple.shade300,
-//                       Colors.deepPurple.shade700,
-//                     ],
-//                   ),
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.grey[300],
+        body: Center(
+          child: Container(
+            height: 200,
+            width: 200,
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: Colors.grey[300],
+              borderRadius: BorderRadius.circular(12),
 
-//                   boxShadow: [
-//                     BoxShadow(
-//                       color: Colors.deepPurple.shade700,
-//                       blurRadius: 15,
-//                       spreadRadius: 1,
-//                       offset: Offset(-10, -10),
-//                     ),
-//                     BoxShadow(
-//                       color: Colors.deepPurple.shade700,
-//                       blurRadius: 15,
-//                       spreadRadius: 1,
-//                       offset: Offset(10, 10),
-//                     ),
-//                   ],
-//                 ),
-//                 child: Center(
-//                   child: Text(
-//                     "1",
-//                     style: TextStyle(
-//                       fontSize: 50,
-//                       color: Colors.white,
-//                       fontWeight: FontWeight.bold,
-//                     ),
-//                   ),
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       );
-//   }
-// }
+              boxShadow: [
+                BoxShadow(
+                  //bottomright
+                  offset: Offset(4, 4),
+                  blurRadius: 5,
+                  spreadRadius: 1,
+                  color: Colors.grey.shade600,
+                ),
+                //topleft
+                BoxShadow(
+                  //bottomright
+                  color: Colors.white,
+                  blurRadius: 15,
+                  spreadRadius: 1,
+                  offset: Offset(-4, -4),
+                ),
+              ],
+            ),
+            child: Center(child: Text("SHADOW")),
+          ),
+        ),
+      ),
+    );
+  }
+}
