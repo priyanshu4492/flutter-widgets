@@ -5,6 +5,7 @@ import 'package:widgets/glassmorphism.dart';
 import 'package:widgets/gradient.dart';
 import 'package:widgets/modern_container.dart';
 import 'package:widgets/neomorphism.dart';
+import 'package:widgets/quiz.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:Glassmorphism(),
+      home:QuizApp(),
     );
   }
 }
