@@ -8,6 +8,7 @@ import 'package:widgets/darkmode/theme/themeprovider.dart';
 import 'package:widgets/glassmorphism.dart';
 import 'package:widgets/gradient.dart';
 import 'package:widgets/gridview.dart';
+import 'package:widgets/moder_container.dart';
 import 'package:widgets/modern_container.dart';
 import 'package:widgets/neomorphism.dart';
 import 'package:widgets/quiz.dart';
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: DarkHome(),
+      home: ModerContainer1(),
       theme: Provider.of<ThemeProvider>(context).themeData,
     );
   }
